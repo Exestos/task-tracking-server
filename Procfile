@@ -1,4 +1,4 @@
-web: gunicorn time_tracking.wsgi
+web: python manage.py runserver
 release: python manage.py makemigrations --noinput
 release: python manage.py collectstatic --noinput
 release: python manage.py migrate --noinput
